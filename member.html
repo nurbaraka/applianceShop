@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊熊家電市集</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <meta property="og:title" content="熊熊家電市集">
+    <meta property="og:description" content="最優惠的家電都在熊熊家電市集">
+    <meta property="og:image" content="https://www.masoudesign.com.tw/h-test/bearshop/assets/images/logo_bear.png">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- bootstrap end -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons+Outlined">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Quicksand:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- main nav -->
+    <header class="bg-white header header--sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between py-3 py-lg-4 header_main">
+                        <a href="index.html" class="d-block"><img src="assets/images/logo_bear.svg" alt="logo"></a>
+                        <nav class="d-flex align-items-center justify-content-end w-100">
+
+                            <!-- search lg -->
+                            <div class="flex-center me-3 w-50 d-none d-lg-flex">
+                                <div class="input-group input-group-lg border border-primary rounded-start">
+                                    <input class="form-control border-0 fs-6" type="search" name="word" placeholder="搜尋"
+                                        id="" autocomplete="off">
+                                </div>
+                                <div class="border-top border-bottom border-primary rounded-end">
+                                    <button class="btn icon--primary bg-primary rounded-end input--search"><span
+                                            class="material-symbols-rounded text-white">search</span></button>
+                                </div>
+                            </div>
+                            <!-- search lg end -->
+
+                            <div class="icon--secondary d-lg-none me-2" data-bs-toggle="modal"
+                                data-bs-target="#searchModal"><span
+                                    class="material-symbols-rounded text-primary">search</span>
+                            </div>
+
+                            <div class="menu_item_has_child position-relative me-2 me-lg-3">
+                                <a href="javascript:void(0)" class="menu_item_link">
+                                    <div class="icon--secondary"><span
+                                            class="material-symbols-rounded text-primary">person</span></div>
+                                </a>
+                                <div class="mega_menu">
+                                    <div class="background text-nowrap">
+                                        <a href="member.html" class="d-block py-2 mb-2">我的資料</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">訂單紀錄</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">收藏清單</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">修改密碼</a>
+                                        <a href="login.html" class="d-block py-2">登入</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="cart1.html" class="position-relative me-3 me-lg-0">
+                                <div class="icon--secondary"><span
+                                        class="material-symbols-rounded text-primary">shopping_cart</span></div>
+                                <div class="flex-center cart__num bg-info rounded-circle position-absolute text-white">1
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="d-lg-none mobile_menu_btn">
+                                <div class="icon--primary"><span
+                                        class="material-symbols-rounded text-primary">menu</span>
+                                </div>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main nav end -->
+    <!-- sub nav -->
+    <div class="border-bottom border-primary d-none d-lg-block bg-white">
+        <div class="container">
+            <div class="row">
+                <nav class="col-12">
+                    <ul class="d-flex justify-content-end align-items-center">
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">活動
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="#" class="d-block py-2 mb-2">活動頁1</a>
+                                    <a href="#" class="d-block py-2">活動頁2</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">品牌
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="product_list_brand.html" class="d-block py-2 mb-2">東元 TECO</a>
+                                    <a href="product_list_brand.html" class="d-block py-2 mb-2">國際 Panasonic</a>
+                                    <a href="product_list_brand.html" class="d-block py-2">富士通 FUJITSU</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">精選家電
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">空調</a>
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">冰箱</a>
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">洗衣機</a>
+                                    <a href="product_list_category.html" class="d-block py-2">電視</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="service.html" class="py-3 d-block">購物說明</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- sub nav end-->
+
+    <!-- sidebar mobile menu -->
+    <div class="sidebar-menu-wrapper">
+
+        <div class="sidebar_mobile_menu">
+            <button type="button" class="btn_close icon--primary">
+                <span class="material-symbols-rounded text-primary">close</span>
+            </button>
+
+            <div class="msb_widget mobile_menu_list clearfix">
+                <ul class="clearfix list-unstyled mb-4">
+
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">活動
+                            <span class="material-symbols-rounded">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">活動1</a></li>
+                            <li><a href="#">活動2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">品牌
+                            <span class="material-symbols-rounded">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product_list_brand.html">國際 Panasonic</a></li>
+                            <li><a href="product_list_brand.html">富士通 FUJITSU</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">精選家電
+                            <span class="material-symbols-rounded">expand_more</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product_list_category.html">空調</a></li>
+                            <li><a href="product_list_category.html">冰箱</a></li>
+                            <li><a href="product_list_category.html">洗衣機</a></li>
+                            <li><a href="product_list_category.html">電視</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="" href="service.html">購物說明</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+    <!-- sidebar mobile menu end -->
+
+    <!-- searchModal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog mw-100 mx-0" style="margin-top: 65px;">
+            <div class="modal-content rounded-0">
+                <div class="modal-body p-0">
+                    <div class="d-flex align-items-center">
+                        <input class="form-control border-0 fs-6 rounded-0 px-3" type="search" name="word" placeholder="搜尋...">
+                        <button class="text-nowrap btn btn__outline--secondary text-secondary py-2 px-4 me-2" type="button">搜尋</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- searchModal end -->
+
+    <!-- universalModal -->
+    <div class="modal-alert modal fade" id="universalModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog mt-20">
+            <div class="modal-content border-warning">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-normal">已加入收藏清單</h5>
+                    <button type="button" class="btn-close text-warning" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- universalModal end -->
+
+    <!-- breadcrumb -->
+    <div class="container mt-3 mt-lg-5 mb-lg-4">
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ol class="breadcrumb flex-nowrap">
+                        <li class="me-1 fw-light"><a href="index.html">首頁</a></li>
+                        <span class="material-symbols-rounded text-primary me-1"> chevron_right </span>
+                        <li class="me-1 fw-light"><a href="#">會員中心</a></li>
+                        <span class="material-symbols-rounded text-primary me-1"> chevron_right </span>
+                        <li class="me-1 fw-light"><a href="#">我的資料</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+
+    <section class="container mb-20">
+        <div class="row">
+            <div class="col-lg-3 pe-lg-5 mb-4 mb-lg-0">
+                <div class="filter__outer">
+                    <div
+                        class="d-flex justify-content-between justify-content-lg-center align-items-center border-top border-bottom border-primary border-2 py-2 px-3">
+                        <h2 class="fs-5 fs-lg-4 mb-0">會員中心</h2>
+                        <div class="d-lg-none filter__toggler">
+                            <span class="material-symbols-rounded align-middle"> expand_more </span>
+                        </div>
+                    </div>
+                    <div class="mt-lg-4 filter__content d-lg-block p-3 p-lg-0">
+                        <ul class="nav flex-column">
+                            <li>
+                                <button class="nav-link nav-link--aside active btn w-100 py-2 fs-lg-5 px-0 text-start rounded-0" id="memberProfile-tab" data-bs-toggle="pill" data-bs-target="#memberProfile" type="button" role="tab" aria-controls="memberProfile" aria-selected="true">我的資料</button>
+                            </li>
+                            <li>
+                                <button class="nav-link nav-link--aside btn w-100 py-2 fs-lg-5 px-0 text-start rounded-0" id="memberHistory-tab" data-bs-toggle="pill" data-bs-target="#memberHistory" type="button" role="tab" aria-controls="memberHistory" aria-selected="false">訂單記錄</button>
+                            </li>
+                            <li>
+                                <button class="nav-link nav-link--aside btn w-100 py-2 fs-lg-5 px-0 text-start rounded-0" id="memberFav-tab" data-bs-toggle="pill" data-bs-target="#memberFav" type="button" role="tab" aria-controls="memberFav" aria-selected="false">收藏清單</button>
+                            </li>
+                            <li>
+                                <button class="nav-link nav-link--aside btn w-100 py-2 fs-lg-5 px-0 text-start rounded-0" id="memberPassword-tab" data-bs-toggle="pill" data-bs-target="#memberPassword" type="button" role="tab" aria-controls="memberPassword" aria-selected="false">修改密碼</button>
+                            </li>
+                            <li>
+                                <button class="nav-link nav-link--aside btn w-100 py-2 fs-lg-5 px-0 text-start rounded-0"type="submit">登出</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="bg-white rounded-2 py-5">
+                    <div class="tab-content" id="memberMainBlock">
+                        <div class="tab-pane fade show active" id="memberProfile" role="tabpanel" aria-labelledby="memberProfile-tab">
+                            <div class="row g-0">
+                                <div class="col-10 offset-1 col-lg-6 offset-lg-3">
+                                    <h2 class="h5 text-center mb-5">我的資料</h2>
+                                    <form action="">
+                                        <div class="mb-4">
+                                            <label for="memberName" class="form-label">姓名</label>
+                                            <input type="text" class="form-control" id="memberName" name="memberName" value="林鮭魚">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="memberMail" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="memberMail" name="memberMail" value="abc@mail.com">
+                                            <small class="text-muted">訂單資訊將以此 Email 通知您</small>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="memberMobile" class="form-label">手機號碼</label>
+                                            <input type="tel" class="form-control" id="memberMobile" name="memberMobile" value="0912345678">
+                                            <small class="text-muted">訂單資訊將以此號碼簡訊通知您</small>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="memberTel" class="form-label">聯絡電話</label>
+                                            <input type="tel" class="form-control" id="memberTel" name="memberTel">
+                                            <label class="checkbox mt-2">同手機號碼
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="mb-4 d-flex flex-wrap">
+                                            <div class="col-12 col-lg-6 pe-lg-2 mb-4 mb-lg-0">
+                                                <label for="recipientCity" class="form-label">縣市</label>
+                                                <select name="recipientCity" id="recipientCity" class="form-select">
+                                                    <option value="">台中市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-6 ps-lg-2">
+                                                <label for="recipientDist" class="form-label">鄉鎮市區</label>
+                                                <select name="recipientDist" id="recipientDist" class="form-select">
+                                                    <option value="">太平區</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="memberAdd" class="form-label">街道地址</label>
+                                            <input type="text" class="form-control" id="memberAdd" value="立德街67號">
+                                        </div>
+                                        <div class="mb-5">
+                                            <label for="memberCode" class="form-label">推薦經銷商編號</label>
+                                            <input type="text" class="form-control" id="memberCode" placeholder="例：56546565">
+                                        </div>
+                                        
+                                        <div class="d-flex align-items-lg-center justify-content-lg-center pb-4 flex-column flex-lg-row">
+                                            <button class="w-100 btn btn__outline btn__outline--danger rounded-1 text-danger me-lg-3 mb-3 mb-lg-0" type="button" data-bs-toggle="modal" data-bs-target="#accountModal">刪除帳號</button>
+                                            <button class="w-100 btn__filled btn__filled--primary text-white rounded-1 position-relative border border-1" type="submit">儲存變更</button>
+                                        </div>
+
+                                        <!-- 刪除帳號 modal -->
+                                        <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-body">
+                                                    <form action="">
+                                                        <h4 class="h5 text-center mb-4">確定要刪除帳號？</h4>
+                                                        <p class="">對於您想要刪除帳號，我們感到相當遺憾。可以告訴我們原因嗎？刪除後，帳號中的資料將一併被永久刪除。</p>
+                                                        <ul class="mb-3">
+                                                            <li>
+                                                                <label class="checkbox mb-3">隱私顧慮
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label class="checkbox mb-3">已有其他帳號
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label class="checkbox mb-3">找不到需要的商品
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label class="checkbox mb-3 w-100">其他
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                    <input type="text" class="form-control mt-2" name="" placeholder="請說明原因">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label for="" class="form-label">如果確定要刪除帳號，請輸入密碼</label>
+        
+                                                                <div class="input-group">
+                                                                    <input class="form-control" type="password">
+                                                                    <div class="d-flex justify-content-center align-items-center bg-light border rounded-end">
+                                                                    <a href="#" class="lh-1 visibilityTrigger px-3 py-2"><span class="material-symbols-rounded" id=""> visibility_off </span></a>
+                                                                    </div>
+                                                                </div>
+        
+                                                                <a href="reset_password.html" class="text-primary text-decoration-underline h7">忘記密碼？</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="w-100 btn btn__filled btn__filled--minor text-white me-3" data-bs-dismiss="modal">取消</button>
+                                                            <button class="w-100 btn btn__outline btn__outline--danger rounded-1 text-danger" type="button">刪除帳號</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除帳號 modal end -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="memberHistory" role="tabpanel" aria-labelledby="memberHistory-tab">
+                            <div class="row g-0">
+                                <div class="col-sm-10 offset-sm-1">
+                                    <h2 class="h5 text-center mb-5">訂單記錄</h2>
+                                    <ul class="nav nav-pills justify-content-center mb-5">
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-link--ink rounded-0 rounded-start active border border-ink px-5" id="memberHistoryProcess-tab" data-bs-toggle="pill" data-bs-target="#memberHistoryProcess" type="button" role="tab" aria-controls="memberHistoryProcess" aria-selected="true">處理中</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-link--ink rounded-0 rounded-end border border-ink px-5" id="memberHistoryDone-tab" data-bs-toggle="pill" data-bs-target="#memberHistoryDone" type="button" role="tab" aria-controls="memberHistoryDone" aria-selected="false">已完成</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <!-- 訂單記錄 > 處理中 -->
+                                        <div class="tab-pane fade show active" id="memberHistoryProcess" role="tabpanel" aria-labelledby="memberHistoryProcess-tab">
+                                            <div class="row g-0 border-bottom border-primary pb-2 row--history">
+                                                <div class="col-2 d-none d-sm-block">
+                                                    <h4 class="h6 pe-2">訂單編號</h4>
+                                                </div>
+                                                <div class="col-4 d-none d-sm-block">
+                                                    <h4 class="h6 px-2">項目</h4>
+                                                </div>
+                                                <div class="col-3 d-none d-sm-block">
+                                                    <h4 class="h6 px-2">訂購時間</h4>
+                                                </div>
+                                                <div class="col-3 d-none d-sm-block">
+                                                    <h4 class="h6 px-2">金額</h4>
+                                                </div>
+                                            </div>
+                                            <!-- 訂單記錄 > 處理中 > 清單 -->
+                                            <div class="accordion accordion-flush" id="accordionHistory">
+                                                <!-- 訂單記錄 > 處理中 > 清單 > 訂單1 -->
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="history-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#history-collapseOne" aria-expanded="false" aria-controls="history-collapseOne">
+                                                        <div class="row g-0 w-100 align-items-center">
+                                                            <div class="col-sm-2">
+                                                                <div class="text-primary fw-bold pe-2 text-break mb-2 mb-sm-0">5524589545</div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <h3 class="h6 fw-bold px-sm-2 text-dark mb-sm-0">東元10KG定頻洗衣機 W1058FS</h3>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <h3 class="h6 px-sm-2 text-dark mb-sm-0">2023年8月3日</h3>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <h3 class="h6 px-sm-2 text-secondary mb-sm-0">$22,900</h3>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    </h2>
+                                                    <div id="history-collapseOne" class="accordion-collapse collapse" aria-labelledby="history-headingOne" data-bs-parent="#accordionHistory">
+                                                    <div class="accordion-body">
+                                                        <div class="border-bottom pb-2 d-flex flex-column mb-4">
+                                                            
+                                                            <div class="mb-2">
+                                                                <span class="">發票類型：</span>
+                                                                <span class="me-2">手機條碼載具</span>
+                                                                <span class="text-muted">/1234567</span>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">付款方式：</span>
+                                                                <span>信用卡一次付清</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="border-bottom pb-2 d-flex flex-column mb-4"> 
+                                                            <div class="mb-2">
+                                                                <span class="">安裝地址： </span>
+                                                                <span>411031 台中市太平區立德街67號</span>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">宅配及安裝： </span>
+                                                                <span class="me-2">2023年8月5日</span>
+                                                                <img src="assets/images/express.png" alt="express">
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">希望安裝時段： </span>
+                                                                <span>9:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="border-bottom pb-2 d-flex flex-column mb-4"> 
+                                                            <div class="mb-2">
+                                                                <span class="">收件人：</span>
+                                                                <span>林鮭魚</span>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">手機號碼： </span>
+                                                                <span>09123456789</span>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">聯絡電話： </span>
+                                                                <span>0423955480</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-2 d-none d-lg-flex flex-column mb-3"> 
+                                                            <span class="fw-bold mb-2">備註說明</span>
+                                                            <div class="border p-3">
+                                                                安裝樓層在 5 樓，有電梯但目前維修中
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex pb-2 mb-2">
+                                                            <div class="col-4 col-lg-2">
+                                                                <img src="assets/images/cart_01.jpg" alt="" class="pe-3">
+                                                            </div>
+                                                            <div class="col-8 col-lg-10">
+                                                                <div class="d-flex align-items-center h-100 pe-lg-3">
+                                                                    <h2 class="h6">東元R32一級變頻空調(冷專) MA63IC-GA2/MS63IC-GA2</h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <h6 class="fw-light">單價</h6>
+                                                            <h3 class="h5 text-secondary text-end">$43,900</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                            <h6 class="fw-light">數量</h6>
+                                                            <h3 class="h5 text-secondary text-end">1</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                            <h6 class="fw-light">小計</h6>
+                                                            <h3 class="h5 text-secondary text-end">$43,900</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                            <h6 class="fw-light">宅配和安裝</h6>
+                                                            <h3 class="h5 text-secondary text-end">+$500</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                            <h6 class="fw-light">活動折扣</h6>
+                                                            <h3 class="h5 text-secondary text-end">-$500</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <h5 class="fw-light text-black">結帳總金額</h5>
+                                                            <h3 class="h4 text-secondary text-end">$43,400</h3>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-lg-center justify-content-lg-center pb-4 flex-column flex-lg-row">
+                                                            <button class="btn btn__outline btn__outline--secondary rounded-1 text-secondary me-lg-3 mb-3 mb-lg-0" type="button" data-bs-toggle="modal" data-bs-target="#returnModal">我要退貨</button>
+                                                            <a href="#" class="btn__outline btn__outline--secondary rounded-1 text-secondary">聯絡客服</a>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 訂單記錄 > 處理中 > 清單 > 訂單1 end-->
+
+                                                <!-- 訂單記錄 > 處理中 > 清單 > 訂單2-->
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="history-headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#history-collapseTwo" aria-expanded="false" aria-controls="history-collapseTwo">
+                                                        <div class="row g-0 w-100 align-items-center">
+                                                            <div class="col-sm-2">
+                                                                <div class="text-primary fw-bold pe-2 text-break mb-2 mb-sm-0">5465745789</div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <h3 class="h6 fw-bold px-sm-2 text-dark mb-sm-0">東元R32一級變頻空調(冷專) MA63IC-GA2/MS63IC-GA2</h3>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <h3 class="h6 px-sm-2 text-dark mb-sm-0">2023年7月31日</h3>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <h3 class="h6 px-sm-2 text-secondary mb-sm-0">$43,400</h3>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </button>
+                                                    </h2>
+                                                    <div id="history-collapseTwo" class="accordion-collapse collapse" aria-labelledby="history-headingTwo" data-bs-parent="#accordionHistory">
+                                                    <div class="accordion-body">
+                                                        <div class="border-bottom pb-2 d-flex flex-column mb-4">
+                                                            
+                                                            <div class="mb-2">
+                                                                <span class="">發票類型：</span>
+                                                                <span class="me-2">手機條碼載具</span>
+                                                                <span class="text-muted">/1234567</span>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">付款方式：</span>
+                                                                <span>信用卡一次付清</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="border-bottom pb-2 d-flex flex-column mb-4"> 
+                                                            <div class="mb-2">
+                                                                <span class="">安裝地址： </span>
+                                                                <span>411031 台中市太平區立德街67號</span>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">宅配及安裝： </span>
+                                                                <span class="me-2">2023年8月5日</span>
+                                                                <img src="assets/images/express.png" alt="express">
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">希望安裝時段： </span>
+                                                                <span>9:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="border-bottom pb-2 d-flex flex-column mb-4"> 
+                                                            <div class="mb-2">
+                                                                <span class="">收件人：</span>
+                                                                <span>林鮭魚</span>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">手機號碼： </span>
+                                                                <span>09123456789</span>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <span class="">聯絡電話： </span>
+                                                                <span>0423955480</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-2 d-none d-lg-flex flex-column mb-3"> 
+                                                            <span class="fw-bold mb-2">備註說明</span>
+                                                            <div class="border p-3">
+                                                                安裝樓層在 5 樓，有電梯但目前維修中
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex pb-2 mb-2">
+                                                            <div class="col-4 col-lg-2">
+                                                                <img src="assets/images/cart_01.jpg" alt="" class="pe-3">
+                                                            </div>
+                                                            <div class="col-8 col-lg-10">
+                                                                <div class="d-flex align-items-center h-100 pe-lg-3">
+                                                                    <h2 class="h6">東元R32一級變頻空調(冷專) MA63IC-GA2/MS63IC-GA2</h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <h6 class="fw-light">單價</h6>
+                                                            <h3 class="h5 text-secondary text-end">$43,900</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                            <h6 class="fw-light">數量</h6>
+                                                            <h3 class="h5 text-secondary text-end">1</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                            <h6 class="fw-light">小計</h6>
+                                                            <h3 class="h5 text-secondary text-end">$43,900</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                            <h6 class="fw-light">宅配和安裝</h6>
+                                                            <h3 class="h5 text-secondary text-end">+$500</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                            <h6 class="fw-light">活動折扣</h6>
+                                                            <h3 class="h5 text-secondary text-end">-$500</h3>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <h5 class="fw-light text-black">結帳總金額</h5>
+                                                            <h3 class="h4 text-secondary text-end">$43,400</h3>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-lg-center justify-content-lg-center pb-4 flex-column flex-lg-row">
+                                                            <button class="btn btn__outline btn__outline--secondary rounded-1 text-secondary me-lg-3 mb-3 mb-lg-0" type="button" data-bs-toggle="modal" data-bs-target="#returnModal">我要退貨</button>
+                                                            <a href="#" class="btn__outline btn__outline--secondary rounded-1 text-secondary">聯絡客服</a>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 訂單記錄 > 處理中 > 清單 > 訂單2 end-->
+                                                </div>
+                                            <!-- 訂單記錄 > 處理中 > 清單 end -->
+                                        </div>
+                                        <!-- 訂單記錄 > 處理中 end-->
+
+                                        <!-- 訂單記錄 > 已完成 -->
+                                        <div class="tab-pane fade" id="memberHistoryDone" role="tabpanel" aria-labelledby="memberHistoryDone-tab">
+                                            <div class="tab-pane fade show active" id="memberHistoryProcess" role="tabpanel" aria-labelledby="memberHistoryProcess-tab">
+                                                <div class="row g-0 border-bottom border-primary pb-2 row--history">
+                                                    <div class="col-2 d-none d-sm-block">
+                                                        <h4 class="h6 pe-2">訂單編號</h4>
+                                                    </div>
+                                                    <div class="col-4 d-none d-sm-block">
+                                                        <h4 class="h6 px-2">項目</h4>
+                                                    </div>
+                                                    <div class="col-3 d-none d-sm-block">
+                                                        <h4 class="h6 px-2">訂購時間</h4>
+                                                    </div>
+                                                    <div class="col-3 d-none d-sm-block">
+                                                        <h4 class="h6 px-2">金額</h4>
+                                                    </div>
+                                                </div>
+                                                <!-- 訂單記錄 > 處理中 > 清單 -->
+                                                <div class="accordion accordion-flush" id="accordionHistory">
+                                                    <!-- 訂單記錄 > 處理中 > 清單 > 訂單1 -->
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="history-headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#history-collapseThree" aria-expanded="false" aria-controls="history-collapseThree">
+                                                            <div class="row g-0 w-100 align-items-center">
+                                                                <div class="col-sm-2">
+                                                                    <div class="text-primary fw-bold pe-2 text-break mb-2">5524589545</div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <h3 class="h6 fw-bold px-sm-2 text-dark">東元10KG定頻洗衣機 W1058FS</h3>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <h3 class="h6 px-sm-2 text-dark">2023年8月3日</h3>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <h3 class="h6 px-sm-2 text-secondary">$22,900</h3>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        </h2>
+                                                        <div id="history-collapseThree" class="accordion-collapse collapse" aria-labelledby="history-headingThree" data-bs-parent="#accordionHistory">
+                                                        <div class="accordion-body">
+                                                            <div class="border-bottom pb-2 d-flex flex-column mb-4">
+                                                                <!-- alert 已送達-->
+                                                                <div class="alert alert-success px-3" role="alert">
+                                                                    <h3 class="text-success h6 mb-0 fw-light">已送達</h3>
+                                                                </div>
+                                                                <!-- alert end -->
+
+                                                                <!-- alert 已退貨-->
+                                                                <div class="alert alert-info px-3" role="alert">
+                                                                    <h3 class="h6 mb-0 fw-light">已退貨</h3>
+                                                                </div>
+                                                                <!-- alert end -->
+                                                                
+                                                                <div class="mb-2">
+                                                                    <span class="">發票類型：</span>
+                                                                    <span class="me-2">手機條碼載具</span>
+                                                                    <span class="text-muted">/1234567</span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <span class="">付款方式：</span>
+                                                                    <span>信用卡一次付清</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="border-bottom pb-2 d-flex flex-column mb-4"> 
+                                                                <div class="mb-2">
+                                                                    <span class="">安裝地址： </span>
+                                                                    <span>411031 台中市太平區立德街67號</span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <span class="">宅配及安裝： </span>
+                                                                    <span class="me-2">2023年8月5日</span>
+                                                                    <img src="assets/images/express.png" alt="express">
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <span class="">希望安裝時段： </span>
+                                                                    <span>9:00 AM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="border-bottom pb-2 d-flex flex-column mb-4"> 
+                                                                <div class="mb-2">
+                                                                    <span class="">收件人：</span>
+                                                                    <span>林鮭魚</span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <span class="">手機號碼： </span>
+                                                                    <span>09123456789</span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <span class="">聯絡電話： </span>
+                                                                    <span>0423955480</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pb-2 d-none d-lg-flex flex-column mb-3"> 
+                                                                <span class="fw-bold mb-2">備註說明</span>
+                                                                <div class="border p-3">
+                                                                    安裝樓層在 5 樓，有電梯但目前維修中
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex pb-2 mb-2">
+                                                                <div class="col-4 col-lg-2">
+                                                                    <img src="assets/images/cart_01.jpg" alt="" class="pe-3">
+                                                                </div>
+                                                                <div class="col-8 col-lg-10">
+                                                                    <div class="d-flex align-items-center h-100 pe-lg-3">
+                                                                        <h2 class="h6">東元R32一級變頻空調(冷專) MA63IC-GA2/MS63IC-GA2</h2>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <h6 class="fw-light">單價</h6>
+                                                                <h3 class="h5 text-secondary text-end">$43,900</h3>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                                <h6 class="fw-light">數量</h6>
+                                                                <h3 class="h5 text-secondary text-end">1</h3>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                                <h6 class="fw-light">小計</h6>
+                                                                <h3 class="h5 text-secondary text-end">$43,900</h3>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                                <h6 class="fw-light">宅配和安裝</h6>
+                                                                <h3 class="h5 text-secondary text-end">+$500</h3>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between border-bottom mb-2">
+                                                                <h6 class="fw-light">活動折扣</h6>
+                                                                <h3 class="h5 text-secondary text-end">-$500</h3>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                                                <h5 class="fw-light text-black">結帳總金額</h5>
+                                                                <h3 class="h4 text-secondary text-end">$43,400</h3>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 訂單記錄 > 處理中 > 清單 > 訂單1 end-->
+                                                    </div>
+                                                <!-- 訂單記錄 > 處理中 > 清單 end -->
+                                            </div>
+
+                                        </div>
+                                        <!-- 訂單記錄 > 已完成 end-->
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 退貨 modal -->
+                            <div class="modal fade" id="returnModal" tabindex="-1" aria-labelledby="returnModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content p-3">
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4 class="h5 text-center mb-4">退貨原因</h4>
+                                            <ul class="mb-3">
+                                                <li>
+                                                    <label class="checkbox mb-3">重複購買
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox mb-3">找到更好的價格
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox mb-3">商品有瑕疵
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox mb-3">商品安裝不正確
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox mb-3">安裝後發現商品與描述不符
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox mb-3">收到錯誤商品
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox mb-3">商品品質不符合期望
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox mb-3 w-100">其他
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                        <input type="text" class="form-control mt-2" name="" placeholder="請說明原因">
+                                                    </label>
+                                                </li>
+                                                
+                                            </ul>
+                                            <div class="d-flex">
+                                                <button type="button" class="w-100 btn btn__filled btn__filled--minor text-white me-3" data-bs-dismiss="modal">取消</button>
+                                                <button class="w-100 btn btn__filled btn__filled--primary rounded-1 text-white" type="button">送出</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- 退貨 modal end -->
+                        </div>
+                        <div class="tab-pane fade" id="memberFav" role="tabpanel" aria-labelledby="memberFav-tab">
+                            <div class="row g-0">
+                                <div class="col-10 offset-1">
+                                    <h2 class="h5 text-center mb-3 mb-md-5">收藏清單</h2>
+                                    <div class="row g-0 border-bottom border-primary pb-2">
+                                        <div class="col-md-2 d-none d-md-block">
+                                            <h4 class="h6">產品編號 </h4>
+                                        </div>
+                                        <div class="col-md-6 d-none d-md-block">
+                                            <h4 class="h6">項目</h4>
+                                        </div>
+                                        <div class="col-md-4 d-none d-md-block">
+                                            <h4 class="h6">金額</h4>
+                                        </div>
+                                    </div>
+                                    <!-- 收藏商品1 -->
+                                    <div class="row g-0 align-items-center py-2 border-bottom">
+                                        <div class="col-md-2">
+                                            <h4 class="h6 text-primary d-none d-md-block">5524589545</h4>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" class="d-block mb-3 mb-md-0">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/cart_02.jpg" alt="product" class="me-3" style="width: 100px;">
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h4 class="h6 text-primary d-md-none">5524589545</h4>
+                                                        <h4 class="h6 mb-md-0">東元10KG定頻洗衣機 W1058FS</h4>
+                                                        <h4 class="h5 text-secondary mb-0 d-md-none">$22,900</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 class="h5 text-secondary mb-0 d-none d-md-block">$22,900</h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="d-flex justify-content-end align-items-center">
+                                                <a href="#" class=" me-2">
+                                                    <div class="icon--primary"><span class="material-symbols-rounded text-primary">delete</span></div>
+                                                </a>
+                                                <a href="#" class="">
+                                                    <div class="icon--primary"><span class="material-symbols-rounded text-primary">add_circle</span></div>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- 收藏商品1 end -->
+                                    <!-- 收藏商品2 -->
+                                    <div class="row g-0 align-items-center py-2 border-bottom">
+                                        <div class="col-md-2">
+                                            <h4 class="h6 text-primary d-none d-md-block">5524589789</h4>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" class="d-block mb-3 mb-md-0">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/cart_01.jpg" alt="product" class="me-3" style="width: 100px;">
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h4 class="h6 text-primary d-md-none">5524589789</h4>
+                                                        <h4 class="h6 mb-md-0">東元R32一級變頻空調(冷專) MA63IC-GA2/MS63IC-GA2</h4>
+                                                        <h4 class="h5 text-secondary mb-0 d-md-none">$43,400</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 class="h5 text-secondary mb-0 d-none d-md-block">$43,400</h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="d-flex justify-content-end align-items-center">
+                                                <a href="#" class=" me-2">
+                                                    <div class="icon--primary"><span class="material-symbols-rounded text-primary">delete</span></div>
+                                                </a>
+                                                <a href="#" class="">
+                                                    <div class="icon--primary"><span class="material-symbols-rounded text-primary">add_circle</span></div>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- 收藏商品2 end -->
+                                </div>
+                                <div class="d-flex justify-content-center mt-5">
+                                    <a href="#" class="btn__filled btn__filled--primary text-white rounded-1 position-relative">繼續逛逛</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="memberPassword" role="tabpanel" aria-labelledby="memberPassword-tab">
+                            <div class="row g-0">
+                                <div class="col-10 offset-1 col-lg-6 offset-lg-3">
+                                    <form action="">
+                                        <h2 class="h5 text-center mb-3 mb-md-5">修改密碼</h2>
+                                        <div class="mb-4">
+                                            <label for="" class="form-label">原密碼</label>
+                                            <div class="input-group">
+                                                <input class="form-control" type="password">
+                                                <div class="d-flex justify-content-center align-items-center bg-light border rounded-end">
+                                                <a href="#" class="lh-1 visibilityTrigger px-3 py-2"><span class="material-symbols-rounded" id=""> visibility_off </span></a>
+                                                </div>
+                                            </div>
+                                            <a href="reset_password.html" class="text-primary text-decoration-underline h7">忘記密碼？</a>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="" class="form-label">新密碼</label>
+                                            <div class="input-group mb-2">
+                                                <input class="form-control" type="password">
+                                                <div class="d-flex justify-content-center align-items-center bg-light border rounded-end">
+                                                <a href="#" class="lh-1 visibilityTrigger px-3 py-2"><span class="material-symbols-rounded" id=""> visibility_off </span></a>
+                                                </div>
+                                            </div>
+                                            <!-- 弱 -->
+                                            <div class="alert alert-danger px-3">
+                                                <h3 class="text-danger h6 mb-0 fw-light">強度：弱</h3>
+                                            </div>
+                                            <!-- 弱 end -->
+                                            <!-- 中 -->
+                                            <div class="alert alert-info px-3">
+                                                <h3 class="text-info h6 mb-0 fw-light">強度：中</h3>
+                                            </div>
+                                            <!-- 中 end -->
+                                            <!-- 強 -->
+                                            <div class="alert alert-success px-3">
+                                                <h3 class="text-success h6 mb-0 fw-light">強度：強</h3>
+                                            </div>
+                                            <!-- 強 end -->
+    
+                                        </div>
+                                        <div class="mb-5">
+                                            <label for="" class="form-label">確認新密碼</label>
+                                            <div class="input-group mb-2">
+                                                <input class="form-control" type="password">
+                                                <div class="d-flex justify-content-center align-items-center bg-light border rounded-end">
+                                                <a href="#" class="lh-1 visibilityTrigger px-3 py-2"><span class="material-symbols-rounded" id=""> visibility_off </span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <h5 class="h6 fw-normal">密碼規則</h5>
+                                        <ol class="text-muted mb-5">
+                                            <li>不可與手機號碼、信箱相同。</li>
+                                            <li>密碼應該至少要有十二個字元。請混合使用大小寫字母、數字及特殊符號如：! ” ? $% ^ & ) 讓密碼更安全。</li>
+                                        </ol>
+                                        <div class="d-flex align-items-lg-center justify-content-lg-center flex-column flex-lg-row">
+                                            <button type="button" class="w-100 btn btn__filled btn__filled--minor text-white me-lg-3 mb-3 mb-lg-0" data-bs-dismiss="modal">取消</button>
+                                            <button class="w-100 btn btn__filled btn__filled--primary rounded-1 text-white" type="submit">送出</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <a href="javascript:void(0)" class="btn--arrow"><img src="assets/images/top.svg" alt="go top"></a>
+
+    <footer class="bg-secondary py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12 col-10 offset-1 offset-lg-0">
+                    <div class="d-flex justify-content-between align-items-lg-center pb-4 flex-column flex-lg-row"
+                        style="border-bottom: 1px solid rgba(255, 255, 255, 0.5);">
+                        <div class="d-flex mb-3 mb-lg-0">
+                            <a href="index.html" class="fw-light text-white hover__opacity--75 me-4">首頁</a>
+                            <a href="about.html" class="fw-light text-white hover__opacity--75 me-4">關於我們</a>
+                            <a href="#" class="fw-light text-white hover__opacity--75">隱私權政策</a>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#"
+                                class="border d-block border-white rounded-circle d-flex justify-content-center align-items-center footer__scoial hover__opacity--75 me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"
+                                    style='fill: rgba(255, 255, 255)'>
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="border d-block border-white rounded-circle d-flex justify-content-center align-items-center footer__scoial hover__opacity--75">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                                    style='fill: rgba(255, 255, 255)'>
+                                    <path
+                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-10 offset-1 offset-lg-0">
+                    <div class="d-flex justify-content-between align-items-lg-center flex-column flex-lg-row">
+                        <h2 class="text-white h6 fw-light mb-2 mb-lg-0">熊熊家電市集</h2>
+                        <div class="text-white opacity-50 h7">2023 © Bear Shop Inc. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.filter__toggler').click(function () {
+                $('.filter__content').slideToggle();
+                $(this).toggleClass('text-primary');
+            })
+
+            $('.visibilityTrigger').on('click', function(event) {
+                event.preventDefault();
+                var $passwordGroup = $(this).closest('.input-group');
+                var $password = $passwordGroup.find('input');
+                var $visibilityTrigger = $passwordGroup.find('.visibilityTrigger span')
+
+                if($password.attr('type') == 'text'){
+                    $password.attr('type', 'password');
+                    $visibilityTrigger.text("visibility_off");
+                } else {
+                    $password.attr('type', 'text');
+                    $visibilityTrigger.text("visibility");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

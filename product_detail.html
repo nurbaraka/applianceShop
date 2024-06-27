@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊熊家電市集</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <meta property="og:title" content="熊熊家電市集">
+    <meta property="og:description" content="最優惠的家電都在熊熊家電市集">
+    <meta property="og:image" content="https://www.masoudesign.com.tw/h-test/bearshop/assets/images/logo_bear.png">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- bootstrap end -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Quicksand:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+<style>
+    .modal-backdrop{
+    background-color: transparent;
+}
+</style>
+
+<body>
+
+    <!-- main nav -->
+    <header class="bg-white header header--sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between py-3 py-lg-4 header_main">
+                        <a href="index.html" class="d-block"><img src="assets/images/logo_bear.svg" alt="logo"></a>
+                        <nav class="d-flex align-items-center justify-content-end w-100">
+
+                            <!-- search lg -->
+                            <div class="flex-center me-3 w-50 d-none d-lg-flex">
+                                <div class="input-group input-group-lg border border-primary rounded-start">
+                                    <input class="form-control border-0 fs-6" type="search" name="word" placeholder="搜尋"
+                                        id="" autocomplete="off">
+                                </div>
+                                <div class="border-top border-bottom border-primary rounded-end">
+                                    <button class="btn icon--primary bg-primary rounded-end input--search"><span
+                                            class="material-symbols-rounded text-white">search</span></button>
+                                </div>
+                            </div>
+                            <!-- search lg end -->
+
+                            <div class="icon--secondary d-lg-none me-2" data-bs-toggle="modal"
+                                data-bs-target="#searchModal"><span
+                                    class="material-symbols-rounded text-primary">search</span>
+                            </div>
+
+                            <div class="menu_item_has_child position-relative me-2 me-lg-3">
+                                <a href="javascript:void(0)" class="menu_item_link">
+                                    <div class="icon--secondary"><span
+                                            class="material-symbols-rounded text-primary">person</span></div>
+                                </a>
+                                <div class="mega_menu">
+                                    <div class="background text-nowrap">
+                                        <a href="member.html" class="d-block py-2 mb-2">我的資料</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">訂單紀錄</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">收藏清單</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">修改密碼</a>
+                                        <a href="login.html" class="d-block py-2">登入</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="cart1.html" class="position-relative me-3 me-lg-0">
+                                <div class="icon--secondary"><span
+                                        class="material-symbols-rounded text-primary">shopping_cart</span></div>
+                                <div class="flex-center cart__num bg-info rounded-circle position-absolute text-white">1
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="d-lg-none mobile_menu_btn">
+                                <div class="icon--primary"><span
+                                        class="material-symbols-rounded text-primary">menu</span>
+                                </div>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main nav end -->
+    <!-- sub nav -->
+    <div class="border-bottom border-primary d-none d-lg-block bg-white">
+        <div class="container">
+            <div class="row">
+                <nav class="col-12">
+                    <ul class="d-flex justify-content-end align-items-center">
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">活動
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="#" class="d-block py-2 mb-2">活動頁1</a>
+                                    <a href="#" class="d-block py-2">活動頁2</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">品牌
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="product_list_brand.html" class="d-block py-2 mb-2">東元 TECO</a>
+                                    <a href="product_list_brand.html" class="d-block py-2 mb-2">國際 Panasonic</a>
+                                    <a href="product_list_brand.html" class="d-block py-2">富士通 FUJITSU</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">精選家電
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">空調</a>
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">冰箱</a>
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">洗衣機</a>
+                                    <a href="product_list_category.html" class="d-block py-2">電視</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="service.html" class="py-3 d-block">購物說明</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- sub nav end-->
+
+    <!-- sidebar mobile menu -->
+    <div class="sidebar-menu-wrapper">
+
+        <div class="sidebar_mobile_menu">
+            <button type="button" class="btn_close icon--primary">
+                <span class="material-symbols-rounded text-primary">close</span>
+            </button>
+
+            <div class="msb_widget mobile_menu_list clearfix">
+                <ul class="clearfix list-unstyled mb-4">
+
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">活動
+                            <span class="material-symbols-rounded">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">活動1</a></li>
+                            <li><a href="#">活動2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">品牌
+                            <span class="material-symbols-rounded">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product_list_brand.html">國際 Panasonic</a></li>
+                            <li><a href="product_list_brand.html">富士通 FUJITSU</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">精選家電
+                            <span class="material-symbols-rounded">expand_more</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product_list_category.html">空調</a></li>
+                            <li><a href="product_list_category.html">冰箱</a></li>
+                            <li><a href="product_list_category.html">洗衣機</a></li>
+                            <li><a href="product_list_category.html">電視</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="" href="service.html">購物說明</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+    <!-- sidebar mobile menu end -->
+
+    <!-- searchModal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog mw-100 mx-0" style="margin-top: 65px;">
+            <div class="modal-content rounded-0">
+                <div class="modal-body p-0">
+                    <div class="d-flex align-items-center">
+                        <input class="form-control border-0 fs-6 rounded-0 px-3" type="search" name="word" placeholder="搜尋...">
+                        <button class="text-nowrap btn btn__outline--secondary text-secondary py-2 px-4 me-2" type="button">搜尋</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- searchModal end -->
+
+    <!-- universalModal -->
+    <div class="modal-alert modal fade" id="universalModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog mt-20">
+            <div class="modal-content border-warning">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-normal">已加入收藏清單</h5>
+                    <button type="button" class="btn-close text-warning" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- universalModal end -->
+
+    <!-- breadcrumb -->
+    <div class="container mt-3 mt-lg-5 mb-lg-12">
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ol class="breadcrumb flex-nowrap">
+                        <li class="me-1 fw-light"><a href="index.html">首頁</a></li>
+                        <span class="material-symbols-rounded text-primary me-1"> chevron_right </span>
+                        <li class="me-1 fw-light"><a href="product_list_category.html">精選家電</a></li>
+                        <span class="material-symbols-rounded text-primary me-1"> chevron_right </span>
+                        <li class="me-1 fw-light"><a href="product_list_category.html">冷氣</a></li>
+                        <span class="material-symbols-rounded text-primary me-1"> chevron_right </span>
+                        <li class="text-dark fw-light text-truncate active" aria-current="page">東元R32一級變頻空調(冷暖)
+                            MA50IH-GA2/MS50IH-GA2
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- product -->
+    <section class="container mb-20">
+        <div class="row">
+            <!-- product__gallary -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="position-sticky top-0">
+                    <div class="gallery-slide mb-3">
+                        <img class="rounded-1 mx-2" src="assets/images/p_air_01.jpg" alt="product">
+                        <img class="rounded-1 mx-2" src="assets/images/p_air_02.jpg" alt="product">
+                        <img class="rounded-1 mx-2" src="assets/images/p_air_03.jpg" alt="product">
+                        <img class="rounded-1 mx-2" src="assets/images/p_air_04.jpg" alt="product">
+                        <img class="rounded-1 mx-2" src="assets/images/p_fridge_01.jpg" alt="product">
+                    </div>
+                    <div class="gallery-slide__nav slide__nav--inner">
+                        <img class="rounded-1 mx-2" src="assets/images/p_air_01.jpg" alt="product">
+                        <img class="rounded-1 mx-2" src="assets/images/p_air_02.jpg" alt="product">
+                        <img class="rounded-1 mx-2" src="assets/images/p_air_03.jpg" alt="product">
+                        <img class="rounded-1 mx-2" src="assets/images/p_air_04.jpg" alt="product">
+                        <img class="rounded-1 mx-2" src="assets/images/p_fridge_01.jpg" alt="product">
+                    </div>
+                </div>
+            </div>
+            <!-- product__gallary end-->
+
+            <!-- product info -->
+            <div class="col-lg-6 ps-lg-5">
+                <div class="d-flex align-items-center mb-3">
+                    <a href="#" id="copy-product-code">
+                        <div class="d-flex text-muted me-3 align-items-center">
+                            <span class="me-2">型號 <span id="product-code">53243216</span></span>
+                            <button class="btn p-0 text-muted"><span class="material-symbols-rounded"> content_copy
+                                </span></button>
+                        </div>
+                    </a>
+                    <div class="product__like me-3" id="add-favorite">
+                        <span class="material-icons-round text-primary">favorite_border</span>
+                    </div>
+                    <div class="product__share">
+                        <a href="#">
+                            <span class="material-symbols-rounded text-primary">share</span>
+                        </a>
+                    </div>
+                </div>
+                <h1 class="h4">東元 R32 一級變頻空調(冷暖) MA50IH-GA2/MS50IH-GA2 </h1>
+                <div class="d-flex flex-wrap mb-4">
+                    <div class="product__tag mb-2">1級能效</div>
+                    <div class="product__tag mb-2">冷暖</div>
+                    <div class="product__tag mb-2">變頻</div>
+                </div>
+                <div class="mb-4">
+                    <h2 class="h5">優惠活動</h2>
+                    <a href="#" class="text-primary text-decoration-underline">涼夏空調季滿一件折 $500</a>
+                </div>
+                <div class="mb-4">
+                    <h2 class="h5">宅配及安裝日</h2>
+                    <form action="" method="">
+                        <div class="mb-3">
+                            <p class="mb-2">標準</p>
+                            <div class="btn-group w-100">
+                                <input type="radio" class="btn-check" name="options" id="option1" value="標準"
+                                    autocomplete="off" checked>
+                                <label class="btn border-2 border-muted p-3 rounded-1" for="option1">
+                                    <div class="d-flex justify-content-between align-items-center fw-bold">
+                                        <div>2023年8月8日 ～ 8月13日</div>
+                                        <div>+$0</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <span class="me-2">極速遞</span>
+                                    <img src="assets/images/express.png" alt="express">
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn text-secondary pe-0" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="若安裝地址位於以下地區，請勿選擇極速遞：屏東縣、宜蘭縣、花蓮縣、台東縣。">
+                                        部分地區不適用極速遞服務
+                                        <span class="material-symbols-rounded align-bottom">
+                                            info
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="btn-group w-100 mb-2">
+                                <input type="radio" class="btn-check" name="options" id="option2" value="1日極速遞"
+                                    autocomplete="off">
+                                <label class="btn border-2 border-muted p-3 rounded-1" for="option2">
+                                    <div class="d-flex justify-content-between align-items-center fw-bold">
+                                        <div>2023年8月5日</div>
+                                        <div>+$800</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="btn-group w-100 mb-2">
+                                <input type="radio" class="btn-check" name="options" id="option3" value="2日極速遞"
+                                    autocomplete="off">
+                                <label class="btn border-2 border-muted p-3 rounded-1" for="option3">
+                                    <div class="d-flex justify-content-between align-items-center fw-bold">
+                                        <div>2023年8月6日</div>
+                                        <div>+$800</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="btn-group w-100 mb-2">
+                                <input type="radio" class="btn-check" name="options" id="option4" value="3日極速遞"
+                                    autocomplete="off">
+                                <label class="btn border-2 border-muted p-3 rounded-1" for="option4">
+                                    <div class="d-flex justify-content-between align-items-center fw-bold">
+                                        <div>2023年8月7日</div>
+                                        <div>+$500</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <p class="text-muted fw-light">下訂後，將有專人致電和您確認實際安裝時間</p>
+
+                    </form>
+
+                </div>
+                <div class="mb-5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h2 class="h5 mb-0">付款方式</h2>
+                        <img src="assets/images/payment.png" alt="payment method">
+                    </div>
+                    <p class="mb-3">信用卡一次付清</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="accordion-item border-0">
+                            <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#installment" aria-expanded="false" aria-controls="installment">
+                                信用卡分期 &nbsp;
+                            </button>
+                        </div>
+                        <a href="https://www.ecpay.com.tw/Announcement/DetailAnnouncement?nID=3050" target="_blank" class="text-decoration-underline h7">查看可分期銀行 <span
+                                class="material-symbols-rounded h7 lh-base">
+                                open_in_new
+                            </span></a>
+                    </div>
+                    <div id="installment" class="accordion-collapse collapse">
+                        <div class="accordion-body px-0 pb-0 pt-3">
+                            <table class="table--payment w-100">
+                                <thead>
+                                    <tr>
+                                        <th class="fw-normal">消費金額門檻</th>
+                                        <th class="fw-normal">可申請期數</th>
+                                        <th class="fw-normal">費率</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>單筆1,000元(含)以上</td>
+                                        <td>6、12期</td>
+                                        <td rowspan="3">4~15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>單筆3,000元(含)以上</td>
+                                        <td>6、12、24期</td>
+                                    </tr>
+                                    <tr>
+                                        <td>單筆5,000元(含)以上</td>
+                                        <td>6、12、24、30期</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <small class="text-muted mt-2 d-block">分期資訊如有調整，以綠界科技金流官網公告為主</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-4 mb-lg-5">
+                    <h2 class="h5 mb-0 me-4">數量</h2>
+                    <div class="counter">
+                        <span class="counter-minus text-center" field="qty-1">
+                            <div class="icon--primary"><span class="material-symbols-rounded text-primary">remove</span>
+                            </div>
+                        </span>
+                        <input type="text" name="qty-1" class="counter-value p-0" value="1" min="1" max="10">
+                        <span class="counter-plus text-center" field="qty-1">
+                            <div class="icon--primary"><span class="material-symbols-rounded text-primary">add</span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-lg-between align-items-center mb-4 mb-lg-5">
+                    <h2 class="h5 mb-0 me-4">總價</h2>
+                    <div class="d-flex align-items-center">
+                        <span class="text-muted text-decoration-line-through fw-bold h5 me-3">$42,900</span>
+                        <span class="text-info fw-bold h4">$37,900</span>
+                    </div>
+                </div>
+                <button type="button" class="btn text-white btn__filled btn__filled--primary rounded-1 w-100 mb-3" id="add-cart">加入購物車</button>
+                <div class="d-flex text-secondary">
+                    <span class="material-symbols-rounded me-2"> visibility</span>
+                    <span>5</span><span> 人正在瀏覽此商品</span>
+                </div>
+            </div>
+            <!-- product info end -->
+        </div>
+    </section>
+    <!-- product end -->
+
+    <!-- 商品說明 -->
+    <section>
+        <div class="bg-white position-sticky nav-tabs--sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-tabs border-primary" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="info-tab" data-bs-toggle="tab"
+                                    data-bs-target="#info" type="button" role="tab" aria-controls="info"
+                                    aria-selected="true">商品介紹</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec"
+                                    type="button" role="tab" aria-controls="spec" aria-selected="false">商品規格</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="shipping-tab" data-bs-toggle="tab"
+                                    data-bs-target="#shipping" type="button" role="tab" aria-controls="shipping"
+                                    aria-selected="false">配送說明</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="tab-content p-0 pt-3 p-lg-5 ">
+                            <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+                                <img src="assets/images/demo_p_detail.jpg" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="spec" role="tabpanel" aria-labelledby="spec-tab">商品規格 Lorem
+                                ipsum dolor sit
+                                amet consectetur, adipisicing elit. Rem, ullam.</div>
+                            <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">配送說明
+                                Lorem, ipsum dolor sit
+                                amet consectetur adipisicing elit. Quidem explicabo autem maiores nisi fugit quasi!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品說明 end -->
+
+    <a href="javascript:void(0)" class="btn--arrow"><img src="assets/images/top.svg" alt="go top"></a>
+
+    <footer class="bg-secondary py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12 col-10 offset-1 offset-lg-0">
+                    <div class="d-flex justify-content-between align-items-lg-center pb-4 flex-column flex-lg-row"
+                        style="border-bottom: 1px solid rgba(255, 255, 255, 0.5);">
+                        <div class="d-flex mb-3 mb-lg-0">
+                            <a href="index.html" class="fw-light text-white hover__opacity--75 me-4">首頁</a>
+                            <a href="about.html" class="fw-light text-white hover__opacity--75 me-4">關於我們</a>
+                            <a href="#" class="fw-light text-white hover__opacity--75">隱私權政策</a>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#"
+                                class="border d-block border-white rounded-circle d-flex justify-content-center align-items-center footer__scoial hover__opacity--75 me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"
+                                    style='fill: rgba(255, 255, 255)'>
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="border d-block border-white rounded-circle d-flex justify-content-center align-items-center footer__scoial hover__opacity--75">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                                    style='fill: rgba(255, 255, 255)'>
+                                    <path
+                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-10 offset-1 offset-lg-0">
+                    <div class="d-flex justify-content-between align-items-lg-center flex-column flex-lg-row">
+                        <h2 class="text-white h6 fw-light mb-2 mb-lg-0">熊熊家電市集</h2>
+                        <div class="text-white opacity-50 h7">2023 © Bear Shop Inc. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.gallery-slide').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.gallery-slide__nav'
+            });
+            $('.gallery-slide__nav').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '.gallery-slide',
+                dots: false,
+                centerMode: false,
+                // infinite: false,
+                focusOnSelect: true
+            });
+        });
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+
+        // 顯示 modal, 更換文字
+        function showModalWithMessage(title, message) {
+            const modalElement = document.getElementById('universalModal');
+            const modalInstance = new bootstrap.Modal(modalElement);
+
+            modalElement.querySelector('.modal-title').textContent = title;
+            modalInstance.show();
+            setTimeout(() => modalInstance.hide(), 1500);
+        }
+
+        // 已複製產品序號
+        const copyProductCode = document.getElementById('copy-product-code');
+        const productCode = document.getElementById('product-code');
+        copyProductCode.addEventListener('click', function (e) {
+            e.preventDefault();
+            navigator.clipboard.writeText(productCode.textContent)
+            showModalWithMessage('已複製產品型號');
+        });
+
+        //已加入收藏清單
+        const addFavorite = document.getElementById('add-favorite');
+        addFavorite.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            let icon = addFavorite.querySelector('.material-icons-round');
+            if (icon.textContent === "favorite_border") {
+                icon.textContent = "favorite";
+                showModalWithMessage('已加入收藏清單');
+            } else {
+                icon.textContent = "favorite_border";
+            }
+        });
+
+        //已加入購物車
+        const addCart = document.getElementById('add-cart');
+        addCart.addEventListener('click', function(e){
+            e.preventDefault();
+            showModalWithMessage('已加入購物車');
+        })
+    </script>
+</body>
+
+</html>

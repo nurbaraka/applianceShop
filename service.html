@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊熊家電市集</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <meta property="og:title" content="熊熊家電市集">
+    <meta property="og:description" content="最優惠的家電都在熊熊家電市集">
+    <meta property="og:image" content="https://www.masoudesign.com.tw/h-test/bearshop/assets/images/logo_bear.png">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- bootstrap end -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons+Outlined">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Quicksand:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body>
+
+    <!-- main nav -->
+    <header class="bg-white header header--sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between py-3 py-lg-4 header_main">
+                        <a href="index.html" class="d-block"><img src="assets/images/logo_bear.svg" alt="logo"></a>
+                        <nav class="d-flex align-items-center justify-content-end w-100">
+
+                            <!-- search lg -->
+                            <div class="flex-center me-3 w-50 d-none d-lg-flex">
+                                <div class="input-group input-group-lg border border-primary rounded-start">
+                                    <input class="form-control border-0 fs-6" type="search" name="word" placeholder="搜尋"
+                                        id="" autocomplete="off">
+                                </div>
+                                <div class="border-top border-bottom border-primary rounded-end">
+                                    <button class="btn icon--primary bg-primary rounded-end input--search"><span
+                                            class="material-symbols-rounded text-white">search</span></button>
+                                </div>
+                            </div>
+                            <!-- search lg end -->
+
+                            <div class="icon--secondary d-lg-none me-2" data-bs-toggle="modal"
+                                data-bs-target="#searchModal"><span
+                                    class="material-symbols-rounded text-primary">search</span>
+                            </div>
+
+                            <div class="menu_item_has_child position-relative me-2 me-lg-3">
+                                <a href="javascript:void(0)" class="menu_item_link">
+                                    <div class="icon--secondary"><span
+                                            class="material-symbols-rounded text-primary">person</span></div>
+                                </a>
+                                <div class="mega_menu">
+                                    <div class="background text-nowrap">
+                                        <a href="member.html" class="d-block py-2 mb-2">我的資料</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">訂單紀錄</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">收藏清單</a>
+                                        <a href="member.html" class="d-block py-2 mb-2">修改密碼</a>
+                                        <a href="login.html" class="d-block py-2">登入</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="cart1.html" class="position-relative me-3 me-lg-0">
+                                <div class="icon--secondary"><span
+                                        class="material-symbols-rounded text-primary">shopping_cart</span></div>
+                                <div class="flex-center cart__num bg-info rounded-circle position-absolute text-white">1
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="d-lg-none mobile_menu_btn">
+                                <div class="icon--primary"><span
+                                        class="material-symbols-rounded text-primary">menu</span>
+                                </div>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main nav end -->
+    <!-- sub nav -->
+    <div class="border-bottom border-primary d-none d-lg-block bg-white">
+        <div class="container">
+            <div class="row">
+                <nav class="col-12">
+                    <ul class="d-flex justify-content-end align-items-center">
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">活動
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="#" class="d-block py-2 mb-2">活動頁1</a>
+                                    <a href="#" class="d-block py-2">活動頁2</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">品牌
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="product_list_brand.html" class="d-block py-2 mb-2">東元 TECO</a>
+                                    <a href="product_list_brand.html" class="d-block py-2 mb-2">國際 Panasonic</a>
+                                    <a href="product_list_brand.html" class="d-block py-2">富士通 FUJITSU</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item_has_child position-relative me-4">
+                            <a href="javascript:void(0)" class="menu_item_link d-block py-3">精選家電
+                                <span class="material-symbols-rounded align-bottom">expand_more</span>
+                            </a>
+                            <div class="mega_menu mega_menu-align pt-0">
+                                <div class="background text-nowrap">
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">空調</a>
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">冰箱</a>
+                                    <a href="product_list_category.html" class="d-block py-2 mb-2">洗衣機</a>
+                                    <a href="product_list_category.html" class="d-block py-2">電視</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="service.html" class="py-3 d-block">購物說明</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- sub nav end-->
+
+    <!-- sidebar mobile menu -->
+    <div class="sidebar-menu-wrapper">
+
+        <div class="sidebar_mobile_menu">
+            <button type="button" class="btn_close icon--primary">
+                <span class="material-symbols-rounded text-primary">close</span>
+            </button>
+
+            <div class="msb_widget mobile_menu_list clearfix">
+                <ul class="clearfix list-unstyled mb-4">
+
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">活動
+                            <span class="material-symbols-rounded">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">活動1</a></li>
+                            <li><a href="#">活動2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">品牌
+                            <span class="material-symbols-rounded">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product_list_brand.html">國際 Panasonic</a></li>
+                            <li><a href="product_list_brand.html">富士通 FUJITSU</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="d-flex align-items-center justify-content-between">精選家電
+                            <span class="material-symbols-rounded">expand_more</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product_list_category.html">空調</a></li>
+                            <li><a href="product_list_category.html">冰箱</a></li>
+                            <li><a href="product_list_category.html">洗衣機</a></li>
+                            <li><a href="product_list_category.html">電視</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="" href="service.html">購物說明</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+    <!-- sidebar mobile menu end -->
+
+    <!-- searchModal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog mw-100 mx-0" style="margin-top: 65px;">
+            <div class="modal-content rounded-0">
+                <div class="modal-body p-0">
+                    <div class="d-flex align-items-center">
+                        <input class="form-control border-0 fs-6 rounded-0 px-3" type="search" name="word" placeholder="搜尋...">
+                        <button class="text-nowrap btn btn__outline--secondary text-secondary py-2 px-4 me-2" type="button">搜尋</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- searchModal end -->
+
+    <!-- breadcrumb -->
+    <div class="container mt-3 mt-lg-5 mb-lg-4 mb-3">
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ol class="breadcrumb flex-nowrap">
+                        <li class="me-1 fw-light"><a href="index.html">首頁</a></li>
+                        <span class="material-symbols-rounded text-primary me-1"> chevron_right </span>
+                        <li class="me-1 fw-light"><a href="#">購物說明</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="mb-5">
+                    <h2 class="h3 fw-light mb-4 mb-lg-5">購物說明</h2>
+                    <h3 class="h4 text-secondary mb-4">公告</h3>
+                    <p class="">「接獲+886及+28開頭的電話請特別注意，高機率為詐騙電話！請務必向165反詐騙專線查詢！」
+                        熊熊家電市集絕不會以+886及+28開頭的電話與您聯繫！
+                        凡接獲自稱熊熊家電市集來電，並要求您ATM轉帳、轉出優惠券或積分、更新帳號密碼、點選所提供之連結等，請務必向本公司客服聯繫查證，以防受騙或個資遭竊取。</p>
+                    <h4 class="h5">【注意！！定期更改密碼！！】</h4>
+                    <p>為保障您的個人資料和帳戶安全，請定期更新您的熊熊家電市集帳戶密碼。
+                        避免使用生日、手機號碼、身分證字號或容易猜測的組合（如：abc12345、qaz12345或ji3g4au4a83）作為您的密碼。
+                        請妥善保管您的帳戶密碼和個人資訊，避免在不同平台使用相同的密碼，並定期更新您的密碼。也請不要安裝來路不明的APP或程式。</p>
+                    <h4 class="h5">【電話】</h4>
+                    <p>請留意假冒為熊熊家電市集客服或銀行人員的詐騙電話，常見詐騙關鍵字包括：「誤設為經銷商、批發商或付費會員」、「信用卡遭人盜刷」、「重複扣款」、「訂單錯誤」、「ATM操作」和「網路銀行轉帳」。</p>
+                    <h4 class="h5">【網路】</h4>
+                    <p>請小心有人冒用熊熊家電市集名義招攬接單員或進行職缺招募。
+                        不法人士會以吸引人的薪酬和自由工作時間為誘餌，引導您註冊投資或下單系統，然後進行詐騙。
+                        請特別小心，不要因為安裝不明來源的程式或使用破解系統而導致個人資料或帳戶資訊外洩。</p>
+                    <p>熊熊家電市集提醒您，我們只會透過合法的求職平台進行職缺招募。如遇到可疑的招募訊息，請立即與165反詐騙專線或本公司客服聯繫查證。
+                        熊熊家電市集也提醒您，請謹慎保管您的帳號密碼和個人資料，避免在不同平台上使用相同的密碼，並定期更新您的密碼。如有發現任何相關遭詐騙事宜，請聯繫165反詐騙專線或與本公司客服聯繫查證。</p>
+                </div>
+                <div class="mb-5">
+                    <h3 class="h4 text-secondary mb-4">會員</h3>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span> 如何註冊會員</h4>
+                    <ol class="mb-4">
+                        <li>
+                            <img src="assets/images/member.png" alt="member" class="me-2"> >［註冊］
+                        </li>
+                        <li>填寫個人基本資料。 為確保您的權益，請務必完整填寫您的聯絡電話、E-mail 及收件地址</li>
+                    </ol>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span> 刪除會員帳號</h4>
+                    <ol class="mb-4">
+                        <li>［會員中心］>［我的資料］>［刪除帳號］</li>
+                        <li>刪除帳號後，帳號中的資料將被永久刪除．．．．．說明文字</li>
+                    </ol>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span> 忘記密碼</h4>
+                    <ol class="mb-4">
+                        <li>
+                            <img src="assets/images/member.png" alt="member" class="me-2"> >［登入］ >［忘記密碼］> 輸入信箱
+                        </li>
+                        <li>確認信會發送到您的信箱中，您可以在信件內按照步驟重新設定密碼。</li>
+                    </ol>
+                </div>
+                <div class="mb-5">
+                    <h3 class="h4 text-secondary mb-4">配送與安裝</h3>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span> 家電安裝需要增加費用嗎？</h4>
+                    <p>賣場中所有商品皆含“基本安裝” 具體價格會根據您選擇的商品、廠牌以及現場的情況決定。基本安裝詳細說明如請參照各商品頁面。</p>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span> 高樓層家電安裝需要加費用嗎？</h4>
+                    <p>配送地點若無電梯需人工搬運服務，顧客須繳付每層樓之搬運費 <span class="text-info">$100(累計計算)</span></p>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span>舊機回收說明</h4>
+                    <p>購買新四機（電視機、電冰箱、洗衣機及冷暖氣機）時，將廢四機交熊熊家電市集物流士者免費逆向回收，裝一台即可回收一台，若有需求多回收四機，會有額外回收費用。</p>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span>請問下單後多久會收到商品？</h4>
+                    <p>針對配送安裝商品，熊熊家電市集會有專人透過電話與您安排配送日期與時段，並在訂單完成後七日內完成運送。
+                        極速遞為 2-3 日內快速安裝配送。</p>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="h4 text-secondary mb-4">訂單出貨</h3>
+                        <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span>訂購完成後想變更收件地址</h4>
+                        <p>熊熊家電市集有專人服務關於修改基本資料問題，請於下單後兩日內與客服聯繫。
+                            專人客服中心 <a href="tel:+886" class="text-primary text-decoration-underline">0912-345678</a></p>
+                        <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span>可以取消訂單嗎</h4>
+                        <p>可以的，請於下單後兩日內與熊熊家電市集專人客服中心 <a href="tel:+886" class="text-primary text-decoration-underline">0912-345678</a> 聯繫。
+                            或從官方網站登入會員後，點選“我要退貨”按鈕，並且完成退貨程序，我們將有專人儘速將您聯繫。
+                            您享有依照消費者保護法規定的七天鑑賞期。在這七天內，您有權利無條件退貨，但請注意商品必須保持全新狀態(包裝材料需保留，否則將收取整新費用)。</p>
+                </div>
+                <div class="mb-5">
+                    <h3 class="h4 text-secondary mb-4">售後服務</h3>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span>商品安裝後有問題怎麼辦</h4>
+                    <p>聯繫客服：首先，請立即與我們的客服團隊聯繫，提供商品資訊和描述問題的詳細情況。</p>
+                    <ol>
+                        <li>聯繫客服：首先，請立即與我們的客服團隊聯繫，提供商品資訊和描述問題的詳細情況。</li>
+                        <li>專業評估：我們會派遣專業技術人員對您提出的問題進行評估，確定問題的性質和嚴重程度。</li>
+                        <li>維修或更換：根據評估結果，我們將進行必要的維修或更換商品的部件。若問題無法在現場解決，我們將安排專業團隊進一步檢修。</li>
+                        <li>免費服務：在保固期內，所有的維修和更換部件將是免費的（除非是因不正當使用或人為損壞造成的問題）。</li>
+                        <li>進一步跟進：維修或更換完成後，我們會進行後續跟進，以確保問題已經得到解決並且您對我們的服務感到滿意。</li>
+                        <li>異地解決方案：對於住在偏遠地區的客戶，我們也會提供特殊的解決方案，請聯繫客服了解詳情。</li>
+                        <li>退貨政策：若經評估後發現商品存在無法修復的嚴重問題，客戶將有權依照我們的退貨政策進行退貨或更換新品。</li>
+                    </ol>
+                    <p>熊熊家電市集的目標是提供高品質的產品和出色的客戶服務。若您在安裝後遇到任何問題，我們都會全力以赴解決。請隨時聯繫我們，讓我們得以迅速為您提供解決方案。謝謝！</p>
+                    <h4 class="h5 fw-bold"><span class="text-primary me-2">&#8226;</span>保固與維修</h4>
+                    <p>對於我們銷售的商品，保固期會根據各品牌和產品型號有所不同。除此之外，熊熊家電市集為您提供額外的三個月安裝保固，以確保安裝後的產品能夠正常運作。
+                        謝謝您選擇熊熊家電市集，如有其他疑問，請隨時與我們聯繫。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <a href="javascript:void(0)" class="btn--arrow"><img src="assets/images/top.svg" alt="go top"></a>
+
+    <footer class="bg-secondary py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12 col-10 offset-1 offset-lg-0">
+                    <div class="d-flex justify-content-between align-items-lg-center pb-4 flex-column flex-lg-row"
+                        style="border-bottom: 1px solid rgba(255, 255, 255, 0.5);">
+                        <div class="d-flex mb-3 mb-lg-0">
+                            <a href="index.html" class="fw-light text-white hover__opacity--75 me-4">首頁</a>
+                            <a href="about.html" class="fw-light text-white hover__opacity--75 me-4">關於我們</a>
+                            <a href="#" class="fw-light text-white hover__opacity--75">隱私權政策</a>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#"
+                                class="border d-block border-white rounded-circle d-flex justify-content-center align-items-center footer__scoial hover__opacity--75 me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"
+                                    style='fill: rgba(255, 255, 255)'>
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="border d-block border-white rounded-circle d-flex justify-content-center align-items-center footer__scoial hover__opacity--75">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                                    style='fill: rgba(255, 255, 255)'>
+                                    <path
+                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-10 offset-1 offset-lg-0">
+                    <div class="d-flex justify-content-between align-items-lg-center flex-column flex-lg-row">
+                        <h2 class="text-white h6 fw-light mb-2 mb-lg-0">熊熊家電市集</h2>
+                        <div class="text-white opacity-50 h7">2023 © Bear Shop Inc. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
